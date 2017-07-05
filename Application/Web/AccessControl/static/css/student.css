@@ -1,0 +1,48 @@
+.error_time{
+    color: #777;
+    background-color: #ffd1c4;
+    text-align: center;
+    padding:10px;
+}
+.circle{
+    background-color: #e7e7e7;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    line-height: 100px;
+    text-align: center;
+    margin: 5px;
+}
+.circle#monday:hover, .activeMon{
+    background-color: #FCC744;
+    color: #fff;
+}
+.circle#tueday:hover, .activeTue{
+    background-color: lightpink;
+    color: #fff;
+}
+.circle#wednesday:hover ,.activeWed{
+    background-color: seagreen;
+    color: #fff;
+}
+.circle#thursday:hover, .activeThur{
+    background-color: orange;
+    color: #fff;
+}
+.circle#friday:hover, .activeFri{
+    background-color: deepskyblue;
+    color: #fff;
+}
+.circle#saturday:hover, .activeSat{
+    background-color: mediumpurple;
+    color: #fff;
+}
+.circle#sunday:hover, .activeSun{
+    background-color: indianred;
+    color: #fff;
+}

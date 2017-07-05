@@ -1,0 +1,9 @@
+.alert-error{
+    color: #777;
+    background-color: #ffd1c4;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}

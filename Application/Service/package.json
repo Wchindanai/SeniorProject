@@ -1,0 +1,18 @@
+{
+  "name": "serviceac",
+  "version": "1.0.0",
+  "description": "Service Connect with AccessControl Device",
+  "main": "AccessControl.js",
+  "dependencies": {
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {
+    "moment": "^2.15.1",
+    "deasync": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chindanai Wasanachin",
+  "license": "DPU"
+}

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="a1wVahaaaaa">
+  <start-date>2016-02-15T01:00:00.000Z</start-date>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+  </resource>
+  <resource id="r1">
+    <name>ชินดนัย</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>ตนุภัทร</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t31"/>
+  </task>
+  <task id="t1">
+    <title>Part 1</title>
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+    <child-task idref="t11"/>
+    <child-task idref="t13"/>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t24"/>
+    <child-task idref="t61"/>
+    <child-task idref="t62"/>
+    <child-task idref="t63"/>
+    <child-task idref="t25"/>
+    <child-task idref="t30"/>
+  </task>
+  <task id="t2">
+    <title>กำหนดขอบเขตและทำรายงานนำเสนอ</title>
+    <type>group</type>
+    <start-constraint-date>2016-02-15T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <start-no-earlier-than>2016-02-15T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t3">
+    <title>ประชุมกลุ่มเพื่อกำหนดทิศทางและขอบเขตของโครงงาน</title>
+    <leveled-start>2016-02-15T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t4">
+    <title>นำขอบเขตที่ได้จากการประชุมเสนออาจารย์ที่ปรึกษา</title>
+    <leveled-start>2016-02-16T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t5">
+    <title>แก้ขอบเขตตามที่อาจารย์ที่ปรึกษาแนะนำ</title>
+    <leveled-start>2016-02-17T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t6">
+    <title>ทำรายงานและสื่อนำเสนอ</title>
+    <leveled-start>2016-02-18T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t7">
+    <title>สอบหัวข้อโครงงานครั้งที่ 2</title>
+    <leveled-start>2016-02-19T01:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2016-02-19T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-02-19T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t8">
+    <title>ศึกษาและหาข้อมูลเกี่ยวกับ Microcontroller</title>
+    <type>group</type>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t9">
+    <title>ศึกษา Microcontroller ที่เหมาะสมกับอุปกรณ์ที่ใช้</title>
+    <leveled-start>2016-02-22T01:00:00.000Z</leveled-start>
+    <effort>3312000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t10">
+    <title>ศึกษาภาษาที่ใช้ในการพัฒนาโปรแกรมบนบอร์ด Microcontroller ที่เลือก</title>
+    <leveled-start>2016-02-22T01:00:00.000Z</leveled-start>
+    <effort>230400</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t11">
+    <title>ออกแบบ UI จอ LCD บนอุปกรณ์</title>
+    <type>group</type>
+    <child-task idref="t12"/>
+  </task>
+  <task id="t12">
+    <title>ออกแบบ User Interface ที่เหมาะสมกับจอ LCD ที่เลือกใช้</title>
+    <leveled-start>2016-03-02T09:45:00.000Z</leveled-start>
+    <effort>3542400</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t13">
+    <title>พัฒนาโปรแกรมบน Microcontroller</title>
+    <type>group</type>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <child-task idref="t57"/>
+    <child-task idref="t58"/>
+  </task>
+  <task id="t14">
+    <title>ทดลองเขียนโปรแกรมบน Microcontroller และศึกษาการทำงานเบื้องต้น</title>
+    <leveled-start>2016-03-10T01:00:00.000Z</leveled-start>
+    <effort>172800</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t15">
+    <title>ออกแบบ Hardware ทั้งหมดในกล่องอุปกรณ์ และตัวกล่องอุปกรณ์</title>
+    <leveled-start>2016-03-10T01:00:00.000Z</leveled-start>
+    <effort>3312000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t16">
+    <title>สอบความก้าวหน้าโครงงาน ครั้งที่ 1 (ส่งออกแบบ Hardware, Software และ Database)</title>
+    <leveled-start>2016-03-18T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t17">
+    <title>พัฒนาระบบสแกนนิ้วที่เชื่อมต่อกับ Microcontroller</title>
+    <type>group</type>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+  </task>
+  <task id="t18">
+    <title>หาอุปกรณ์สแกนนิ้วที่สามารถเชื่อมต่อและทำงานกับ Microcontroller ที่เลือกได้</title>
+    <leveled-start>2016-03-21T01:00:00.000Z</leveled-start>
+    <effort>3312000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t19">
+    <title>พัฒนา Web Application ที่ออกแบบในหน้า Stat , Student</title>
+    <leveled-start>2016-03-21T01:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t20">
+    <title>ศึกษาระบบการทำงานของอุปกรณ์สแกนนิ้ว</title>
+    <leveled-start>2016-03-28T01:00:00.000Z</leveled-start>
+    <effort>3312000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t22">
+    <title>ศึกษาและเขียนโปรแกรมเพื่อทำการจัดเก็บลายนิ้วมือลง Storage</title>
+    <leveled-start>2016-04-11T01:00:00.000Z</leveled-start>
+    <effort>3542400</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t23">
+    <title>ศึกษาและเขียนโปรแกรมเพื่อทำการเปรียบเทียบลายนิ้วมือ</title>
+    <leveled-start>2016-04-18T01:00:00.000Z</leveled-start>
+    <effort>3513600</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t24">
+    <title>สอบความก้าวหน้าโครงงาน ครั้งที่ 2 (ส่ง Microcontroller ที่สามารถสแกนลายนิ้วมือและเก็บได้ 1-2 นิ้ว)</title>
+    <leveled-start>2016-04-22T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t25">
+    <title>พัฒนาระบบ Microcontroller ควบคุมกลอนประตู</title>
+    <type>group</type>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <child-task idref="t28"/>
+    <child-task idref="t29"/>
+  </task>
+  <task id="t26">
+    <title>ศึกษาความหลากหลายของอุปกรณ์กลอนประตูไฟฟ้า</title>
+    <leveled-start>2016-04-25T01:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t27">
+    <title>ศึกษาความต้องการของอุปกรณ์กลอนประตูไฟฟ้า</title>
+    <leveled-start>2016-04-28T01:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t28">
+    <title>เขียนโปรแกรมใช้งานกลอนประตูไฟฟ้า</title>
+    <leveled-start>2016-05-03T01:00:00.000Z</leveled-start>
+    <effort>259200</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t29">
+    <title>พัฒนาระบบกลอนประตูไฟฟ้าเชื่อมต่อกับสแกนลายนิ้วมือ</title>
+    <leveled-start>2016-05-16T01:00:00.000Z</leveled-start>
+    <effort>230400</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t30">
+    <title>สอบโครงงาน ภาคการศึกษา 2/2558 (สรุปมีอุปกรณ์ที่สามารถปลดล็อคประตูโดยการสแกนลายนิ้วมือ และ เก็บลายนิ้วมือได้ 3 - 4 )</title>
+    <leveled-start>2016-05-26T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t31">
+    <title>Part 2</title>
+    <type>group</type>
+    <child-task idref="t32"/>
+    <child-task idref="t39"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+  </task>
+  <task id="t32">
+    <title>Devices</title>
+    <type>group</type>
+    <child-task idref="t71"/>
+    <child-task idref="t72"/>
+    <child-task idref="t74"/>
+    <child-task idref="t34"/>
+    <child-task idref="t35"/>
+    <child-task idref="t76"/>
+    <child-task idref="t64"/>
+  </task>
+  <task id="t34">
+    <title>ศึกษาวิธีการสร้างกล่องที่เหมาะสม</title>
+    <leveled-start>2016-08-22T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t35">
+    <title>ออกแบบกล่องอุปกรณ์ที่เหมาะสมกับอุปกรณ์ที่มี</title>
+    <leveled-start>2016-09-05T01:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t39">
+    <title>Server</title>
+    <type>group</type>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+    <child-task idref="t42"/>
+    <child-task idref="t65"/>
+    <child-task idref="t43"/>
+    <child-task idref="t44"/>
+  </task>
+  <task id="t40">
+    <title>ปรับปรุงหน้า Stat โดย ใช้ ReactJS</title>
+    <leveled-start>2016-08-08T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t41">
+    <title>ออกแบบ Service ที่ใช้ในการเชื่อมต่อ Hardware</title>
+    <leveled-start>2016-08-22T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t42">
+    <title>พัฒนา Service โดยใช้ NodeJS</title>
+    <leveled-start>2016-09-05T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t43">
+    <title>ทดสอบและแก้ไขข้อผิลพลาดของ Web Application</title>
+    <leveled-start>2016-10-03T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <prerequisite-task idref="t65"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t44">
+    <title>ทดสอบและแก้ไขข้อผิดพลาด Service</title>
+    <leveled-start>2016-10-17T01:00:00.000Z</leveled-start>
+    <effort>288000</effort>
+    <prerequisite-task idref="t43"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t46">
+    <title>ทดสอบโครงงานทั้งระบบ</title>
+    <leveled-start>2016-10-31T01:00:00.000Z</leveled-start>
+    <effort>576000</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t47">
+    <title>จัดทำรูปเล่นรายงานและสื่อในการนำเสนอ</title>
+    <leveled-start>2016-11-14T01:00:00.000Z</leveled-start>
+    <effort>432000</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t48">
+    <title>สอบโครงงาน ภาคการศึกษา 1/2559 (ส่งโครงงานและรูปเล่มรายงานที่สมบูรณ์)</title>
+    <leveled-start>2016-12-02T01:00:00.000Z</leveled-start>
+    <effort>3427200</effort>
+    <prerequisite-task idref="t47"/>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t57">
+    <title>ออกแบบ User Interface ทั้งหมด</title>
+    <leveled-start>2016-03-10T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>345600</effort>
+    <locked-start-date>2016-03-10T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-03-17T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t58">
+    <title>ออกแบบฐานข้อมูลในการเก็บข้อมูลต่างๆ</title>
+    <leveled-start>2016-03-10T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>172800</effort>
+    <locked-start-date>2016-03-10T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-03-17T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t61">
+    <title>พัฒนา Web Application ที่ออกแบบในหน้า Summary , Devices</title>
+    <leveled-start>2016-04-25T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>230400</effort>
+    <locked-start-date>2016-04-25T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-05-04T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t62">
+    <title>พัฒนา Database ทั้งระบบ</title>
+    <leveled-start>2016-05-05T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>230400</effort>
+    <locked-start-date>2016-05-05T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-05-16T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t63">
+    <title>เชื่อมต่อ Web Application กับ Database</title>
+    <leveled-start>2016-05-17T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>201600</effort>
+    <locked-start-date>2016-05-17T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-05-25T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t64">
+    <title>พัฒนาระบบแจ้งเตือนบนตัวอุปกรณ์ที่มี</title>
+    <leveled-start>2016-09-19T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>288000</effort>
+    <locked-start-date>2016-09-19T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-09-30T10:00:00.000Z</locked-end-date>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t65">
+    <title>ทดลองเชื่อต่อ Service กับ Hardware</title>
+    <leveled-start>2016-09-19T01:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>288000</effort>
+    <locked-start-date>2016-09-19T01:00:00.000Z</locked-start-date>
+    <locked-end-date>2016-09-30T10:00:00.000Z</locked-end-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t71">
+    <title>ศึกษาและพัฒนา Raspberry PI ที่เชื่อมต่อกับอุปกรณ์ Fingerprint Scanner</title>
+    <effort>288000</effort>
+    <start-constraint-date>2016-08-23T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-08-23T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t72">
+    <title>พัฒนา Raspberry PI เชื่อมต่อกับ LCD และ Buzzer</title>
+    <effort>288000</effort>
+    <start-constraint-date>2016-09-06T02:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-09-06T02:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t74">
+    <title>พัฒนาระบบเชื่อมต่อและส่งข้อมูลผ่าน WiFi</title>
+    <effort>288000</effort>
+    <start-constraint-date>2016-09-20T02:30:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-09-20T02:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>เชื่อมต่อกล่องอุปกรณ์เข้ากับ Server</title>
+    <effort>144000</effort>
+    <start-constraint-date>2016-08-23T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-08-23T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
